@@ -12,19 +12,8 @@ const toggleUserState = (allUsers, userName) => {
     ),
   );
 };
-//--------первоначальный вариант задачи
-//   const updatedUsers = allUsers.map(user =>
-//     user.name === userName ? { ...user, active: !user.active } : user,
-//   );
-//   callback(updatedUsers);
 
 const logger = updatedUsers => console.table(updatedUsers);
-
-/*
- * Сейчас работает так
- */
-// toggleUserState(users, 'Mango', logger);
-// toggleUserState(users, 'Lux', logger);
 
 /*
  * Должно работать так
